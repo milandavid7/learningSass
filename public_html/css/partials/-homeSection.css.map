@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "-homeSection.css",
-	"sources": [
-		"../../scss/partials/-homeSection.scss"
-	],
-	"names": [],
-	"mappings": "AAAA;;;EAGE;AACF;;;EAGE"
-}
