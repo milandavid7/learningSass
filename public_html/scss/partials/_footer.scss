@@ -1,12 +1,58 @@
 
 $footer-bg: $purple;
 $footer-color: $white;
+$footer-nav-text: $josefin;
+
 
 footer{
     padding: 30px 0;
     background-color: $footer-bg;
 }
 
-footer a, footer p{
-    color: $footer-color;
+footer{
+
+    a,
+    p{
+        color: $footer-color;
+        text-align: center;
+    }
+
+    nav{
+        ul{
+            margin-bottom: 30px;
+            list-style: none;
+            padding-left: 0;
+            li{
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 10px 0;
+                    font-family: $footer-nav-text;
+                    font-weight: $font-bold;
+
+                    &:hover,
+                        &.active{
+                        color: $nav-link-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px){
+    footer{
+        nav{
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    a{
+                       padding: 5px 20px; 
+                    }
+                }
+            }
+        }
+    }
 }

@@ -483,8 +483,39 @@ footer {
   background-color: #8A059E;
 }
 
-footer a, footer p {
+footer a,
+footer p {
   color: #FFF;
+  text-align: center;
+}
+
+footer nav ul {
+  margin-bottom: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+footer nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+footer nav ul li a:hover, footer nav ul li a.active {
+  color: #18B304;
+}
+
+@media (min-width: 768px) {
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer nav ul li a {
+    padding: 5px 20px;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
