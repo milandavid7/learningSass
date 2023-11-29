@@ -1,4 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Rubik:wght@400;700&display=swap");
+.btn-default, .btn-danger, .btn-succes, .btn-warning, .btn-info, .btn-dark {
+  display: inline-block;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-default {
+  background-color: #444;
+  color: #FFF;
+}
+
+.btn-danger {
+  background-color: #F00008;
+  color: #FFF;
+}
+
+.btn-succes {
+  background-color: #18B304;
+  color: #FFF;
+}
+
+.btn-warning {
+  background-color: #F77A05;
+  color: #FFF;
+}
+
+.btn-info {
+  background-color: #09E0B1;
+  color: #000;
+}
+
+.btn-dark {
+  background-color: #000;
+  color: #FFF;
+}
+
 /*    
     font-family: 'Josefin Sans', sans-serif;
 
@@ -449,14 +490,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Created on : Nov 25, 2023, 5:32:26 PM
     Author     : Admin
 */
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
-*/
-/*
-    Created on : Nov 25, 2023, 5:33:33 PM
-    Author     : Admin
-*/
+.service-section {
+  padding: 30px 0;
+}
+
 .comment-section {
   padding: 30px 0;
   background-color: #FFF;
