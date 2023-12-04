@@ -28,7 +28,7 @@ $tbody-hover-bg: darken($light-gray, 15%);
         thead{
             background-color: $thead-bg;
             th{
-                color: $thead-color;
+                color: colorYiq($thead-bg);
                 border: $thead-border-color;
             }
         }
