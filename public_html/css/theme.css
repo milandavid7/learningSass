@@ -1,3 +1,12 @@
+/*$btn-default: $dark-gray;
+$btn-default-color: $white;
+$btn-dark-color: $black;
+
+$btn-danger: $red;
+$btn-succes: $green;
+$btn-warning: $orange;
+$btn-info: $cyan;
+$btn-dark: $black;*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@400;700&family=Rubik:wght@400;700&display=swap");
 .btn-default, .btn-danger, .btn-succes, .btn-warning, .btn-info, .btn-dark {
   display: inline-block;
@@ -11,7 +20,7 @@
 }
 
 .btn-default {
-  background-color: rgba(68, 68, 68, 0.7);
+  background-color: #444;
   color: #FFF;
 }
 
@@ -56,14 +65,75 @@
 }
 
 .btn-dark {
-  background-color: #000;
+  background-color: #333333;
   color: #FFF;
 }
 
 .btn-dark:hover {
-  background-color: #333333;
+  background-color: #1a1a1a;
 }
 
+/*
+.btn-default{
+    @extend %btn;
+    background-color: rgba($btn-default, 0.7);
+    color: colorYiq($btn-default);
+    
+    &:hover{
+        background-color: darken($btn-default, 10%);
+    }
+}
+
+.btn-danger{
+    @extend %btn;
+    background-color: $btn-danger;
+    color: colorYiq($btn-danger);
+    
+    &:hover{
+        background-color: darken($btn-danger, 10%);
+    }
+}
+
+.btn-succes{
+    @extend %btn;
+    background-color: $btn-succes;
+    color: colorYiq($btn-succes);
+    
+    &:hover{
+        background-color: darken($btn-succes, 10%);
+    }
+}
+
+.btn-warning{
+    @extend %btn;
+    background-color: $btn-warning;
+    color: colorYiq($btn-warning);
+    
+    &:hover{
+        background-color: darken($btn-warning, 10%);
+    }
+}
+
+.btn-info{
+    @extend %btn;
+    background-color: $btn-info;
+    color: colorYiq($btn-info);
+    
+    &:hover{
+        background-color: darken($btn-info, 10%);
+    }
+}
+
+.btn-dark{
+    @extend %btn;
+    background-color: $btn-dark;
+    color: colorYiq($btn-dark);
+    
+    &:hover{
+        background-color: lighten($btn-dark, 20%);
+    }
+}
+*/
 /*    
     font-family: 'Josefin Sans', sans-serif;
 
