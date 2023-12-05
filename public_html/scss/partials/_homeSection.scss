@@ -1,5 +1,9 @@
 
 .home-section{
     @include styleSection(150px, 150px, transparent);
+    background-image: url(../img/home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; 
 }
 
