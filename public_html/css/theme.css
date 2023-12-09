@@ -517,6 +517,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   color: #8A059E;
+  margin-top: 0;
 }
 
 header {
@@ -595,11 +596,34 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #FFF;
 }
 
-.comment-section .comment-img img {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
+.comment-section .comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-section .comment-list .comment-item {
+  display: flex;
+}
+
+.comment-section .comment-list .comment-item .comment-body {
+  padding-left: 10px;
+}
+
+.comment-section .comment-list .comment-item .comment-img {
+  flex: 0 0 50px;
+}
+
+.comment-section .comment-list .comment-item .comment-img img {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+@media (min-width: 768px) {
+  .comment-section .comment-img {
+    flex: 0 0 90px !important;
+  }
 }
 
 .courses-section {
@@ -643,6 +667,41 @@ header nav ul li a:hover, header nav ul li a.active {
 .contact-section {
   padding: 150px 0 150px;
   background-color: #FFF;
+  background-image: url(../img/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-section .contact-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-section .contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-section .contact-form .form-group label {
+  display: block;
+}
+
+.contact-section .contact-form .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  line-height: 4rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 footer {
